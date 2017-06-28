@@ -2,13 +2,28 @@
  * Created by anshaj on 6/28/17.
  */
 // Lecture 8 - Modules
-function printAvatar(){
-    console.log("Avatar: PG-13")
-}
 
+// The following is present by default so instead of writing again the fucntions you want to export you can write those functions in it.
+module.exports = {
 
-function printInterstellar(){
-    console.log("Insterstellar: R")
-}
+    printAvatar: function () {
+        console.log("Avatar: PG-13")
+    },
 
-module.exports.avatar = printAvatar;
+    printInterstellar: function () {
+        console.log("Interstellar: R")
+    },
+
+    favMovie: "Poppye"
+};
+// function printAvatar(){
+//     console.log("Avatar: PG-13")
+// }
+//
+//
+// function printInterstellar(){
+//     console.log("Interstellar: R")
+// }
+//
+// module.exports.avatar = printAvatar;
+// module.exports.interstellar = printInterstellar;

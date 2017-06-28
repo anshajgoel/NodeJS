@@ -5,6 +5,6 @@
 //This is how you import a file in the same directory but don't add the extension
 var movies =require("./movies");
 
-movies.avatar();
+movies.printAvatar();
 
 // This is similar to having public and private methods
