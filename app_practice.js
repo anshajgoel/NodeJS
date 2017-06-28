@@ -33,3 +33,22 @@ console.log(anshaj.favGame)
 console.log(19 == '19') //true
 console.log(19 === '19') // false as it compares the type along with value.
 
+
+// This Keyword
+// This is a reference to whatever thing is calling it.
+var this_anshaj = {
+    printFirstName: function () {
+        console.log("\nMy name is Anshaj");
+        console.log(this === this_anshaj);
+    }
+};
+
+this_anshaj.printFirstName();
+
+// Here the default context is global
+function doSomethingWorthless(){
+        console.log("\nI am Worthless");
+        console.log(this === global);
+}
+
+doSomethingWorthless();
