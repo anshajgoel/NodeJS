@@ -31,6 +31,15 @@
 
 //Lecture 10
 
-module.exports = {
-    favmovie: ""
+// module.exports = {
+//     favmovie: ""
+// };
+
+
+//Lecture 11
+
+module.exports = function () {
+    return{
+        "favmovie" : ""
+    }
 };
